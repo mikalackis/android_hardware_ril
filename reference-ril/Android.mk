@@ -15,7 +15,7 @@ LOCAL_SHARED_LIBRARIES := \
     liblog libcutils libutils libril librilutils
 
 # for asprinf
-LOCAL_CFLAGS := -D_GNU_SOURCE
+LOCAL_CFLAGS := -D_GNU_SOURCE -Os
 
 LOCAL_C_INCLUDES :=
 

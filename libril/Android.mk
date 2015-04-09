@@ -23,6 +23,8 @@ ifeq ($(SIM_COUNT), 2)
     LOCAL_CFLAGS += -DANDROID_SIM_COUNT_2
 endif
 
+LOCAL_CFLAGS += -Os
+
 LOCAL_MODULE:= libril
 
 include $(BUILD_SHARED_LIBRARY)
@@ -41,7 +43,7 @@ LOCAL_STATIC_LIBRARIES := \
     libcutils \
     librilutils_static
 
-LOCAL_CFLAGS :=
+LOCAL_CFLAGS := -Os
 
 LOCAL_MODULE:= libril_static
 
